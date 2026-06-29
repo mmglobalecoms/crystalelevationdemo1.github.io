@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesjonalne Czyszczenie Kostki, Dachów i Elewacji</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        iconify-icon { display: inline-block; vertical-align: middle; }
+
+        /* Hero grain overlay */
+        .hero-grain::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+            pointer-events: none;
+            opacity: 0.4;
+        }
+
+        /* Animacje fade-in hero */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(18px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-up-1 { animation: fadeUp 0.7s ease both; }
+        .fade-up-2 { animation: fadeUp 0.7s 0.12s ease both; }
+        .fade-up-3 { animation: fadeUp 0.7s 0.24s ease both; }
+        .fade-up-4 { animation: fadeUp 0.7s 0.36s ease both; }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
+
+    <div class="bg-[#0f172a] text-white border-b border-white/[0.06]">
+        <div class="hidden md:block">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-3">
+                    <div class="border-r border-white/[0.08] flex items-center gap-3.5 py-3.5 px-8">
+                        <div class="w-8 h-8 rounded-lg bg-blue-600/20 flex items-center justify-center flex-shrink-0">
+                            <iconify-icon icon="solar:map-point-bold" class="text-blue-400 text-base"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="text-[9px] font-semibold uppercase tracking-[0.12em] text-slate-500">Obszar działania</p>
+                            <p class="text-sm font-medium text-white leading-tight">Warszawa i okolice</p>
+                        </div>
+                    </div>
+                    <div class="border-r border-white/[0.08] flex items-center justify-center gap-3.5 py-3.5 px-8">
+                        <div class="w-8 h-8 rounded-lg bg-blue-600/20 flex items-center justify-center flex-shrink-0">
+                            <iconify-icon icon="solar:tag-price-bold" class="text-blue-400 text-base"></iconify-icon>
+                        </div>
+                        <div class="">
+                            <p class="text-[9px] font-semibold uppercase tracking-[0.12em] text-slate-500">Darmowa wycena</p>
+                            <p class="text-sm font-medium text-white leading-tight">Z dojazdem do klienta</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-end gap-3.5 py-3.5 px-8">
+                        <div class="w-8 h-8 rounded-lg bg-blue-600/20 flex items-center justify-center flex-shrink-0">
+                            <iconify-icon icon="solar:phone-bold" class="text-blue-400 text-base"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="text-[9px] font-semibold uppercase tracking-[0.12em] text-slate-500">Kontakt</p>
+                            <a href="tel:+48123456789" class="text-sm font-semibold text-white hover:text-blue-300 transition-colors leading-tight">+48 123 456 789</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden overflow-x-auto" style="scrollbar-width:none">
+            <div class="flex items-center min-w-max divide-x divide-white/[0.08]">
+                <div class="flex items-center gap-2 py-2.5 px-4 flex-shrink-0">
+                    <iconify-icon icon="solar:map-point-bold" class="text-blue-400 text-sm"></iconify-icon>
+                    <span class="text-xs text-slate-300">Warszawa i okolice</span>
+                </div>
+                <div class="flex items-center gap-2 py-2.5 px-4 flex-shrink-0">
+                    <iconify-icon icon="solar:tag-price-bold" class="text-blue-400 text-sm"></iconify-icon>
+                    <span class="text-xs text-slate-300">Darmowa wycena</span>
+                </div>
+                <div class="flex items-center gap-2 py-2.5 px-4 flex-shrink-0">
+                    <iconify-icon icon="solar:phone-bold" class="text-blue-400 text-sm"></iconify-icon>
+                    <a href="tel:+48123456789" class="text-xs font-semibold text-white">+48 123 456 789</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-slate-200/80 shadow-[0_1px_0_0_rgba(0,0,0,0.04)]">
+        <div class="flex h-16 max-w-7xl mr-auto ml-auto pr-6 pl-6 items-center justify-between">
+
+            <a href="index.html" class="text-xl font-semibold tracking-tighter text-slate-900">
+                CZYSTYGRUNT
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="oFirmie1.html" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">O nas</a>
+                <a href="#uslugi" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Usługi</a>
+                <a href="Cennik.html" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-600">Cennik</a>
+                <a href="Kontakt.html" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Kontakt</a>
+            </nav>
+
+            <a href="#kontakt" class="hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors shadow-sm">
+                <iconify-icon icon="solar:phone-calling-linear" class="mr-2 text-lg"></iconify-icon>
+                Zadzwoń teraz
+            </a>
+
+            <button class="md:hidden text-slate-600 hover:text-slate-900">
+                <iconify-icon icon="solar:hamburger-menu-linear" class="text-2xl"></iconify-icon>
+            </button>
+        </div>
+    </header>
+
+    <section class="relative bg-slate-900 overflow-hidden hero-grain">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute top-0 right-0 w-[900px] h-[900px] -translate-y-1/3 translate-x-1/4 rounded-full bg-blue-600/10 blur-[120px]"></div>
+            <div class="absolute bottom-0 left-0 w-[600px] h-[600px] translate-y-1/3 -translate-x-1/4 rounded-full bg-blue-800/10 blur-[100px]"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[540px] items-center">
+                <div class="py-20 lg:py-28 pr-0 lg:pr-16 z-10">
+                    <span class="fade-up-1 inline-flex items-center px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-medium tracking-wide uppercase mb-6 backdrop-blur-sm">
+                        Profesjonalne usługi czyszczące
+                    </span>
+                    <h1 class="fade-up-2 text-[2.6rem] md:text-5xl xl:text-6xl font-semibold tracking-tight text-white leading-[1.1] mb-5">
+                        Profesjonalne mycie kostki brukowej i&nbsp;elewacji
+                    </h1>
+                    <p class="fade-up-3 text-lg text-slate-300/90 mb-9 leading-relaxed max-w-lg font-light">
+                        Zadbaj o wygląd swojej posesji oraz spraw, aby Twój dom lśnił jak świeżo pomalowany!
+                    </p>
+                    <div class="fade-up-4 flex flex-col sm:flex-row gap-3">
+                        <a href="#kontakt" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-500 transition-all shadow-lg shadow-blue-900/40">
+                            <iconify-icon icon="solar:phone-calling-linear" class="text-base"></iconify-icon>
+                            Darmowa wycena
+                        </a>
+                        <a href="#uslugi" class="inline-flex items-center justify-center px-7 py-3.5 text-sm font-medium text-white/80 rounded-lg border border-white/15 hover:bg-white/10 transition-all backdrop-blur-sm">
+                            Poznaj nasze usługi
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hidden lg:block absolute right-0 top-0 w-1/2 h-full">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1400" alt="Mycie kostki brukowej" class="w-full h-full object-cover opacity-75">
+                    <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/25 to-transparent"></div>
+                    <div class="bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent absolute top-0 right-0 bottom-0 left-0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <div class="group p-6 rounded-2xl bg-slate-50/50 border border-slate-100 hover:border-blue-100 hover:bg-blue-50/30 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                        <iconify-icon icon="solar:shield-check-linear" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold tracking-tight text-slate-900 mb-2">Pełen profesjonalizm</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Do każdego zlecenia podchodzimy z najwyższą
+                        starannością, dbając o bezpieczeństwo czyszczonych powierzchni i otoczenia.</p>
+                </div>
+                <div class="group p-6 rounded-2xl bg-slate-50/50 border border-slate-100 hover:border-blue-100 hover:bg-blue-50/30 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                        <iconify-icon icon="solar:settings-bold-duotone" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold tracking-tight text-slate-900 mb-2">Nowoczesny sprzęt</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Wykorzystujemy zaawansowane myjki spalinowe i
+                        dedykowaną chemię, radzącą sobie z najcięższymi zabrudzeniami.</p>
+                </div>
+                <div class="group p-6 rounded-2xl bg-slate-50/50 border border-slate-100 hover:border-blue-100 hover:bg-blue-50/30 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                        <iconify-icon icon="solar:medal-ribbons-star-linear" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold tracking-tight text-slate-900 mb-2">Wieloletnie doświadczenie</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Setki wyczyszczonych podjazdów i dachów to nasza
+                        wizytówka. Wiemy jak dobrać metodę do każdego materiału.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="uslugi" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 mb-4">Nasze Usługi</h2>
+                <p class="text-base text-slate-600">Kompleksowe rozwiązania dla czystości Twojej posesji. Usuwamy mchy,
+                    porosty, plamy z oleju i wieloletnie zabrudzenia atmosferyczne.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=800" alt="Mycie kostki brukowej" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold tracking-tight text-slate-900 mb-2">Mycie kostki brukowej</h3>
+                        <p class="text-sm text-slate-600 mb-4 line-clamp-3">Usuwanie mchu, chwastów, plam ropopochodnych
+                            i osadów. Przywracamy naturalny kolor podjazdom i ścieżkom.</p>
+                        <a href="#kontakt" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors">
+                            Więcej <iconify-icon icon="solar:arrow-right-linear" class="ml-1"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&q=80&w=800" alt="Czyszczenie dachów" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold tracking-tight text-slate-900 mb-2">Czyszczenie dachu</h3>
+                        <p class="text-sm text-slate-600 mb-4 line-clamp-3">Bezpieczne mycie dachówek betonowych i
+                            ceramicznych. Likwidacja porostów i glonów bez ryzyka uszkodzeń.</p>
+                        <a href="#kontakt" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors">
+                            Więcej <iconify-icon icon="solar:arrow-right-linear" class="ml-1"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Mycie elewacji" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold tracking-tight text-slate-900 mb-2">Mycie elewacji</h3>
+                        <p class="text-sm text-slate-600 mb-4 line-clamp-3">Niskociśnieniowe mycie tynków (softwash),
+                            które usuwa zielony nalot, brud i odświeża wygląd całego budynku.</p>
+                        <a href="#kontakt" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors">
+                            Więcej <iconify-icon icon="solar:arrow-right-linear" class="ml-1"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" alt="Impregnacja" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold tracking-tight text-slate-900 mb-2">Impregnacja</h3>
+                        <p class="text-sm text-slate-600 mb-4 line-clamp-3">Zabezpieczanie oczyszczonych powierzchni
+                            hydrofobowymi środkami, co opóźnia ponowne brudzenie i ułatwia kolejne mycia.</p>
+                        <a href="#kontakt" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors">
+                            Więcej <iconify-icon icon="solar:arrow-right-linear" class="ml-1"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="o-nas" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 mb-6">Specjaliści od
+                        trudnych zabrudzeń</h2>
+                    <p class="text-base text-slate-600 mb-6 leading-relaxed">
+                        Jesteśmy lokalną firmą, dla której czystość to nie tylko praca, ale i pasja. Rozumiemy, że
+                        estetyka otoczenia wpływa na komfort życia. Dlatego stosujemy tylko sprawdzone rozwiązania,
+                        które gwarantują spektakularne efekty bez uszkodzeń czyszczonej struktury.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <div class="mt-0.5 w-5 h-5 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0 mr-3">
+                                <iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon>
+                            </div>
+                            <span class="text-sm text-slate-700 font-medium">Darmowe oględziny i wycena u klienta</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="mt-0.5 w-5 h-5 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0 mr-3">
+                                <iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon>
+                            </div>
+                            <span class="text-sm text-slate-700 font-medium">Własne źródło zasilania i ewentualnie wody (zbiorniki)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="mt-0.5 w-5 h-5 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0 mr-3">
+                                <iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon>
+                            </div>
+                            <span class="text-sm text-slate-700 font-medium">Biodegradowalna chemia bezpieczna dla roślin i zwierząt</span>
+                        </li>
+                    </ul>
+                    <a href="#kontakt" class="inline-flex items-center text-sm font-medium text-slate-900 hover:text-blue-600 transition-colors">
+                        Umów bezpłatną wycenę <iconify-icon icon="solar:arrow-right-linear" class="ml-2"></iconify-icon>
+                    </a>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-blue-600 rounded-3xl translate-x-4 translate-y-4 opacity-10"></div>
+                    <div class="relative aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80&w=1200" alt="Pracownik podczas czyszczenia" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="py-24 bg-slate-900 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-96 h-96 bg-blue-500 rounded-full blur-[128px] opacity-20"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="text-white">
+                    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mb-6">Skontaktuj się z nami</h2>
+                    <p class="text-base text-slate-400 mb-10 leading-relaxed max-w-md">
+                        Masz pytania lub chcesz umówić się na darmową wycenę? Wypełnij formularz obok, zadzwoń lub
+                        napisz e-mail. Odpowiadamy najszybciej jak to możliwe.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-center group">
+                            <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mr-4 group-hover:bg-white/10 transition-colors">
+                                <iconify-icon icon="solar:phone-linear" class="text-xl text-blue-400"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium mb-0.5 uppercase tracking-wider">Telefon</p>
+                                <a href="tel:+48123456789" class="text-lg font-medium text-white hover:text-blue-400 transition-colors">+48 123 456 789</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center group">
+                            <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mr-4 group-hover:bg-white/10 transition-colors">
+                                <iconify-icon icon="solar:letter-linear" class="text-xl text-blue-400"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium mb-0.5 uppercase tracking-wider">E-mail</p>
+                                <a href="/cdn-cgi/l/email-protection#89e2e6e7fde8e2fdc9eaf3f0fafdf0eefbfce7fda7f9e5" class="text-lg font-medium text-white hover:text-blue-400 transition-colors">kontakt@czystygrunt.pl</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center group">
+                            <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mr-4 group-hover:bg-white/10 transition-colors">
+                                <iconify-icon icon="solar:map-point-linear" class="text-xl text-blue-400"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium mb-0.5 uppercase tracking-wider">Obszar działania</p>
+                                <p class="text-lg font-medium text-white">Warszawa i okolice (do 50km)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8">
+                        <form class="space-y-4" action="#" method="POST">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name" class="sr-only">Imię i nazwisko</label>
+                                    <input type="text" id="name" placeholder="Imię i nazwisko" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all">
+                                </div>
+                                <div>
+                                    <label for="phone" class="sr-only">Telefon</label>
+                                    <input type="tel" id="phone" placeholder="Numer telefonu" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="service" class="sr-only">Usługa</label>
+                                <select id="service" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all appearance-none">
+                                    <option value="" disabled="" selected="">Wybierz interesującą Cię usługę</option>
+                                    <option value="kostka">Mycie kostki brukowej</option>
+                                    <option value="dach">Czyszczenie dachu</option>
+                                    <option value="elewacja">Mycie elewacji</option>
+                                    <option value="inne">Inne / Kompleksowe</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="sr-only">Wiadomość</label>
+                                <textarea id="message" rows="4" placeholder="Opisz krótko co mamy wyczyścić (np. podjazd ok. 100m2)" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all resize-none"></textarea>
+                            </div>
+                            <div class="flex items-start py-2">
+                                <div class="flex items-center h-5">
+                                    <input id="privacy" type="checkbox" class="w-4 h-4 rounded border-white/20 bg-white/5 text-blue-600 focus:ring-blue-600 focus:ring-offset-slate-900 cursor-pointer appearance-none checked:bg-blue-600 checked:border-transparent relative after:content-[''] after:absolute after:hidden checked:after:block after:w-1.5 after:h-2.5 after:border-r-2 after:border-b-2 after:border-white after:top-[2px] after:left-[5px] after:rotate-45">
+                                </div>
+                                <div class="ml-3 text-xs text-slate-400">
+                                    <label for="privacy" class="cursor-pointer">Akceptuję <a href="#" class="text-blue-400 hover:underline">politykę prywatności</a> i wyrażam zgodę na przetwarzanie moich danych w celu kontaktu.</label>
+                                </div>
+                            </div>
+                            <button type="button" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm py-3.5 rounded-lg transition-colors shadow-sm mt-2">
+                                Wyślij zapytanie
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-white/10 py-8">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-slate-500 font-medium tracking-tight uppercase">
+                © 2025 CZYSTYGRUNT. Wszelkie prawa zastrzeżone.
+            </p>
+            <div class="flex gap-6">
+                <a href="#" class="text-xs text-slate-500 hover:text-white transition-colors">Polityka prywatności</a>
+                <a href="#" class="text-xs text-slate-500 hover:text-white transition-colors">Regulamin</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('button.md\\:hidden').addEventListener('click', () => {
+            const menu = document.querySelector('.md\\:hidden').nextElementSibling;
+            if(menu) menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
